@@ -1,0 +1,28 @@
+---
+const {
+    title, subtitle
+} = Astro.props;
+import 'bootstrap/dist/css/bootstrap.min.css';
+---
+<style>
+    .fondo {
+        background-color: #f5f5f5;
+        color: #000;
+        padding: 10px;
+    }
+    header {
+        height: 100vh;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+</style>
+
+<header class="d-flex flex-column mb-1 justify-content-center align-items-center flex-nowrap">
+    <h1 class="fw-bold">{title}</h1>
+    <h2>{subtitle}</h2>
+</header>
